@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Page Section</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .hero-section {
+        background-color: #000;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .logo-placeholder {
+        width: 200px;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Add any additional styling for the logo placeholder */
+      }
+
+      .underline-heading {
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-top: 20px;
+      }
+
+      .call-to-action-button {
+        margin-top: 30px;
+        padding: 12px 20px;
+        background-color: #fff;
+        color: #000;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .logo-placeholder {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero-section">
+      <div class="logo-placeholder">
+        <img src="assets/logoofel.png" alt="Your Logo" /> -->
+      </div>
+      <div class="underline-heading">
+        Brand = (Design + Media + Code) X story
+      </div>
+      <button class="call-to-action-button" onclick="sendEmail()">
+        CONTACT
+      </button>
+    </div>
+
+    <script>
+      function sendEmail() {
+        window.location.href = 'mailto:exclusiveservices88@gmail.com';
+      }
+    </script>
+  </body>
+</html>
